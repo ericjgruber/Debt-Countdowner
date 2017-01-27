@@ -1,17 +1,34 @@
+<?php
+
+/*
+ * Array containing links for the footer.
+ */
+$links = array(
+  'home' => array(
+    "href" => "/index.php",
+    "name" => "Home",
+  ),
+  'blog' => array(
+    "href" => "http://www.ericjgruber.com",
+    "name" => "Eric J. Gruber",
+  ),
+);
+
+?>
+
 <div class="footer row">
    <nav class="small-3 small-centered columns">
     <ul>
-      <li>
-        <a href="index.php">Home</a>
-      </li>
-      <li>
-        <?php
-        echo "&copy " . date('Y') . "<a href=\"http://www.ericjgruber.com\" target=\"_blank\">
-Eric J. Gruber</a>";
-        ?>
-      </li>
+      <li>&copy; <?php echo date("Y"); ?></li>
+      <?php foreach($links as $link) : ?>
+        <li>
+          <a href="<?php echo $link['href']; ?>">
+            <?php echo $link['name']; ?>
+          </a>
+        </li>
+      <?php endforeach; ?>
     </ul>
     </nav>
-</nav>
+</div>
 </body>
 </html>
