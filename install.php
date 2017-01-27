@@ -1,7 +1,7 @@
 <?php include ('theme/header.php'); ?>
 
-<div class="row install-form">
-  <div class="small-3 small-centered columns">
+<div class="row install-wrapper">
+  <div class="small-3 small-centered columns install-form">
     <h1>Installation</h1>
     <form action="install.php">
       <legend>Database Name</legend>
@@ -13,7 +13,7 @@
       <legend>Database Password</legend>
       <input type="password" name="dbpassword">
 
-      <input type="submit" name="submit" value="Submit" class="button">
+      <input type="submit" name="submit" value="Submit" class="success button">
     </form>
   </div>
 </div>

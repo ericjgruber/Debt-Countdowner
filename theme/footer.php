@@ -1,5 +1,5 @@
 <div class="footer row">
-   <nav>
+   <nav class="small-3 small-centered columns">
     <ul>
       <li>
         <a href="index.php">Home</a>
@@ -12,6 +12,6 @@ Eric J. Gruber</a>";
       </li>
     </ul>
     </nav>
-</div>
+</nav>
 </body>
 </html>
