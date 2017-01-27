@@ -7,10 +7,12 @@ $links = array(
   'home' => array(
     "href" => "/index.php",
     "name" => "Home",
+    "title" => "Debt Countdowner home",
   ),
   'blog' => array(
     "href" => "http://www.ericjgruber.com",
     "name" => "Eric J. Gruber",
+    "title" => "Personal blog of Eric J. Gruber",
   ),
 );
 
@@ -22,7 +24,7 @@ $links = array(
       <li>&copy; <?php echo date("Y"); ?></li>
       <?php foreach($links as $link) : ?>
         <li>
-          <a href="<?php echo $link['href']; ?>">
+          <a href="<?php echo $link['href']; ?>" title="<?php echo $link['title']; ?>">
             <?php echo $link['name']; ?>
           </a>
         </li>
