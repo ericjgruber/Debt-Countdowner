@@ -1,8 +1,21 @@
 <?php include ('theme/header.php'); ?>
 
-<div class="row">
-  <h1>Installation</h1>
-  <p>Who are you? What are you doing here?</p>
+<div class="row install-form">
+  <div class="small-3 small-centered columns">
+    <h1>Installation</h1>
+    <form action="install.php">
+      <legend>Database Name</legend>
+      <input type="text" name="dbname">
+
+      <legend>Database Username</legend>
+      <input type="text" name="dbusername">
+
+      <legend>Database Password</legend>
+      <input type="password" name="dbpassword">
+
+      <input type="submit" name="submit" value="Submit" class="button">
+    </form>
+  </div>
 </div>
 
 <?php include('theme/footer.php'); ?>
