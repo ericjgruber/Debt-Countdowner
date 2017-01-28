@@ -16,6 +16,12 @@ body {
     padding: 1rem;
 }
 
+.latest-amounts {
+    background-color: #fff;
+    margin-top: 10rem;
+    padding: 1rem;
+}
+
 .footer {
     margin-top: .5rem;
 }
