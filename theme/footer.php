@@ -3,23 +3,33 @@
 /*
  * Array containing links for the footer.
  */
-$links = array(
-  'home' => array(
+$links = [
+  "home" => [
     "href" => "/index.php",
     "name" => "Home",
     "title" => "Debt Countdowner home",
-  ),
-  'blog' => array(
+  ],
+  "blog" => [
     "href" => "http://www.ericjgruber.com",
     "name" => "Eric J. Gruber",
     "title" => "Personal blog of Eric J. Gruber",
-  ),
-);
+  ],
+  "add" => [
+    "href" => "/add.php",
+    "name" => "Add",
+    "title" => "Add an Entry",
+  ],
+  "view" => [
+    "href" => "/view.php",
+    "name" => "View",
+    "title" => "View All Entries",
+  ],
+];
 
 ?>
 
 <div class="footer row">
-   <nav class="small-3 small-centered columns">
+   <nav class="small-4 small-centered columns">
     <ul>
       <li>&copy; <?php echo date("Y"); ?></li>
       <?php foreach($links as $link) : ?>
