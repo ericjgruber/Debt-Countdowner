@@ -1,5 +1,9 @@
 <?php include ('theme/header.php'); ?>
 
+<?php
+$sql = '"CREATE TABLE small_victories (date DATE, latest_amount DECIMAL(8,2));"';
+?>
+
 <div class="row install-wrapper">
   <div class="small-3 small-centered columns install-form">
     <h1>Installation</h1>
