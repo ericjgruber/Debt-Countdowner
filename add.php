@@ -4,7 +4,8 @@
 
 include('dbconnect.php');
 
-$sql = "INSERT INTO small_victories (date, latest_amount) VALUES ('2017-01-25', '31945.78');";
+//$sql = "INSERT INTO small_victories (date, latest_amount) VALUES ('2017-01-25', '31945.78');";
+$sql = '';
 
 if (mysqli_query($connection, $sql)) {
   echo "The new amount was added.";
