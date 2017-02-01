@@ -10,6 +10,8 @@ $result = mysqli_query($connection, $sql);
 
 <div class="row">
   <div class="small-6 small-centered columns latest-amounts">
+    <h2>Debt Countdowner</h2>
+
     <table class="hover">
       <thead>
       <tr>
