@@ -15,7 +15,7 @@ $links = [
     "title" => "Personal blog of Eric J. Gruber",
   ],
   "add" => [
-    "href" => "/add.php",
+    "href" => "/new.php",
     "name" => "Add",
     "title" => "Add an Entry",
   ],
@@ -29,7 +29,7 @@ $links = [
 ?>
 
 <div class="footer row">
-   <nav class="small-4 small-centered columns">
+   <nav class="small-6 small-centered columns">
     <ul>
       <li>&copy; <?php echo date("Y"); ?></li>
       <?php foreach($links as $link) : ?>

@@ -4,8 +4,12 @@
 
 include('dbconnect.php');
 
-//$sql = "INSERT INTO small_victories (date, latest_amount) VALUES ('2017-01-25', '31945.78');";
-$sql = '';
+$payment_date = mysqli_real_escape_string($connection, $_POST['payment_date']);
+$remaining_debt = mysqli_real_escape_string($connection, $_POST['remaining_debt']);
+
+
+$sql = "INSERT INTO small_victories (date, latest_amount) VALUES ('$payment_date', '$remaining_debt');";
+
 
 if (mysqli_query($connection, $sql)) {
   echo "The new amount was added.";

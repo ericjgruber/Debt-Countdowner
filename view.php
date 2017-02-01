@@ -15,8 +15,8 @@ $result = mysqli_query($connection, $sql);
     <table class="hover">
       <thead>
       <tr>
-        <th width="200">Payment Received</th>
-        <th width="200">Remaining Debt</th>
+        <th>Payment Received</th>
+        <th>Remaining Debt</th>
       </tr>
       </thead>
       <tbody>
